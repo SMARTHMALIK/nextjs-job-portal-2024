@@ -17,6 +17,7 @@ export default function RootLayout({ children }) {
   return (
     <ClerkProvider>
       <html lang="en">
+      <script src="//code.tidio.co/xzouzygffyeddajjyvhsuqdvuvt8ddwq.js" async></script>
         <body className={inter.className}>
           <Suspense fallback={<Loading />}>
             <CommonLayout
