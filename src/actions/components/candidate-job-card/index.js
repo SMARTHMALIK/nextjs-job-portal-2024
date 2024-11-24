@@ -31,7 +31,7 @@ function CandidateJobCard({ jobItem, profileInfo, jobApplications }) {
   const { toast } = useToast();
 
   async function handlejobApply() {
-    if (!profileInfo?.isPremiumUser && jobApplications.length >= 2) {
+    if (!profileInfo?.isPremiumUser && jobApplications.length >= 2000) {
       setShowJobDetailsDrawer(false);
       toast({
         variant: "destructive",
