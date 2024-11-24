@@ -26,10 +26,10 @@ function PostNewJob({ profileInfo, user, jobList }) {
   }
 
   function handleAddNewJob() {
-    if (!profileInfo?.isPremiumUser && jobList.length >= 2) {
+    if (!profileInfo?.isPremiumUser && jobList.length >= 2000) {
       toast({
         variant: "destructive",
-        title: "You can post max 2 jobs.",
+        title: "You can post max 2000 jobs.",
         description: "Please opt for membership to post more jobs",
       });
       return;
